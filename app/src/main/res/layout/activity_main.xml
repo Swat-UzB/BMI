@@ -35,9 +35,11 @@
         <Button
             android:id="@+id/buttonCalculate"
             style="@style/text_style"
+            android:onClick="calcBMI"
             android:text="@string/calculate" />
 
         <TextView
+            android:id="@+id/textViewBMIndex"
             style="@style/text_style"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -47,9 +49,20 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/imageBMI"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:contentDescription="no"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="BMI image"
+        app:layout_constraintBottom_toTopOf="@id/textViewResult"
         app:layout_constraintTop_toTopOf="@id/linerMain" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        style="@style/text_style"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageBMI"
+        tools:text="Hello World!" />
 </androidx.constraintlayout.widget.ConstraintLayout>
