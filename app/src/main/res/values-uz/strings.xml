@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TMI app</string>
+    <string name="calculate">Hisoblash</string>
+    <string name="weight_in_kg">Vazn kg da</string>
+    <string name="height_in_meter">balandligi metrda</string>
+    <string name="underweight">Kam vaznlilik</string>
+    <string name="normal_weight">Normal og\'irlik</string>
+    <string name="over_weight">semizlik</string>
+    <string name="obesity_class_1">Birinchi darajali semirish</string>
+    <string name="obesity_class_2">Ikkinchi darajali semirish</string>
+    <string name="obesity_class_3">Uchinchi darajali semirish</string>
 </resources>

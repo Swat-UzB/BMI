@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ИМТ app</string>
+    <string name="calculate">Расчет</string>
+    <string name="weight_in_kg">Вес в кг</string>
+    <string name="height_in_meter">высота в метре</string>
+    <string name="underweight">Недостаточная масса тела</string>
+    <string name="normal_weight">Норма</string>
+    <string name="over_weight">Избыточная масса тела</string>
+    <string name="obesity_class_1">Ожирение первой степени</string>
+    <string name="obesity_class_2">Ожирение второй степени</string>
+    <string name="obesity_class_3">Ожирение третьей степени\t</string>
 </resources>

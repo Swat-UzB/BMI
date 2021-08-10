@@ -9,4 +9,5 @@
     <string name="obesity_class_1">Obesity class 1</string>
     <string name="obesity_class_2">Obesity class 2</string>
     <string name="obesity_class_3">Obesity class 3</string>
+    <string name="str_image_desc">appropriate image according to your BMI</string>
 </resources>

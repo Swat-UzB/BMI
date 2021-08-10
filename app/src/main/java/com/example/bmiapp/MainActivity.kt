@@ -27,19 +27,29 @@ class MainActivity : AppCompatActivity() {
 
     fun BMI(I: Float, M: Float) {
         val result = M / (I * I)
+        var resultText = ""
+        var resultResID: Int
         binding.textViewResult.text = String.format("%.2f", result)
-        binding.textViewBMIndex.text = if (result < 18.5) {
-            getString(R.string.underweight)
+        if (result < 18.5) {
+            resultText = getString(R.string.underweight)
+            resultResID = R.drawable.underweight
         } else if (result < 25 && result >= 18.5) {
-            getString(R.string.normal_weight)
+            resultText = getString(R.string.normal_weight)
+            resultResID = R.drawable.healthy
         } else if (result < 30 && result >= 25) {
-            getString(R.string.over_weight)
+            resultText = getString(R.string.over_weight)
+            resultResID = R.drawable.overweight
         } else if (result < 35 && result >= 30) {
-            getString(R.string.obesity_class_1)
+            resultText = getString(R.string.obesity_class_1)
+            resultResID = R.drawable.obesity
         } else if (result < 39.9 && result >= 35) {
-            getString(R.string.obesity_class_2)
+            resultText = getString(R.string.obesity_class_2)
+            resultResID = R.drawable.obesity
         } else {
-            getString(R.string.obesity_class_3)
+            resultText = getString(R.string.obesity_class_3)
+            resultResID = R.drawable.obesity
         }
+        binding.textViewBMIndex.text = resultText
+        binding.imageBMI.setImageResource(resultResID)
     }
 }
