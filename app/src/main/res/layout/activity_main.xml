@@ -18,7 +18,7 @@
         <EditText
             android:id="@+id/editTextNumberDecimalWeight"
             style="@style/text_style"
-            android:digits="0123458789."
+            android:digits="0123456789."
             android:ems="10"
             android:hint="@string/weight_in_kg"
             android:importantForAutofill="no"
@@ -27,7 +27,7 @@
         <EditText
             android:id="@+id/editTextNumberDecimalHeight"
             style="@style/text_style"
-            android:digits="0123458789."
+            android:digits="0123456789."
             android:ems="10"
             android:hint="@string/height_in_meter"
             android:importantForAutofill="no"
